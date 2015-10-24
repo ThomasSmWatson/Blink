@@ -1,9 +1,13 @@
 <!DOCTYPE>
 <html>
 	<head>
-	<title>Home Page</title>
+		<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js'></script>
+		<title>Home Page</title>
 	</head>
 	<body>
-		<h1>Nice Tom!</h1>
+		<div ng-app="">
+			<input type="text" ng-model="name">
+			<h2>Holla {{name}}</p>
+		</div>
 	</body>
 </html>
