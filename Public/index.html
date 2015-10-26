@@ -1,25 +1,26 @@
 <!DOCTYPE>
-<html>
+<html ng-app='blinkApp'>
 	<head>
 	<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
 		<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js'></script>
+		<!--JQuery-->
+		<script src='https://code.jquery.com/jquery-2.1.4.min.js'></script>
+		<!--Angular-route-->
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.1/angular-route.js'></script>
+		<script src='./controllers/home/mainCtrl.js'></script>
 		<title>Home Page</title>
 	</head>
-	<body>
+	<body >
 		<nav class='navbar nafbar-fixed navbar-default'>
 			<div class='navbar=header'>
 				<a class='navbar-brand' href='#'><span class="glyphicon glyphicon-home" aria-hidden='true'> Blink</span></a>
 			</div>
-			<a class='navbar-brand navbar-right' href='/login'>Log in</a>
-			<a class='navbar-brand navbar-right' href='/register'>Register</a>
+			<a class='navbar-brand navbar-right' href='#/login'>Log in</a>
+			<a class='navbar-brand navbar-right' href='#/register'>Register</a>
 		</nav>
 		<h1 align='center'>Blink<br><small>The potential of change</small></h1>
-		<hr>
-		<div>
-			<span style='font-size:2.5em' class='glyphicon glyphicon-arrow-left pull-left' ng-click='getLastView()'></span>
-			<span style='font-size:2.5em' class='glyphicon glyphicon-arrow-right pull-right'ng-click='getNextView()'></span>
+		<hr>		
 			<div ng-view></div>
-		</div>
 		<hr>
 
 		<!-- Latest compiled and minified JavaScript -->
