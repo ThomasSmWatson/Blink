@@ -6,6 +6,10 @@ app.config(['$routeProvider',function($routeProvider){
 			templateUrl: './../../routes/register.html',
 			controller: 'BlogController'
 		})
+		.when('/login',{
+			templateUrl:'./../../routes/login.html',
+			controller: 'BlogController'
+		})
 		.otherwise({
 			redirectTo: '/'
 		});
