@@ -4,7 +4,10 @@
   "description": "Angular Website Which uses Instagram API to get images regarding the type/time of day",
   "main": "server.js",
   "dependencies": {
-    "express": "^4.13.3"
+    "express": "^4.13.3",
+    "jasmine": "^2.3.2",
+    "jasmine-node": "^1.14.5",
+    "mongoose": "^4.2.3"
   },
   "devDependencies": {},
   "scripts": {
