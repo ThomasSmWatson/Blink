@@ -1,15 +1,13 @@
 {
   "name": "blink",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Angular Website Which uses Instagram API to get images regarding the type/time of day",
   "main": "server.js",
   "dependencies": {
     "express": "^4.13.3",
     "jasmine": "^2.3.2",
-    "jasmine-node": "^1.14.5",
     "mongoose": "^4.2.3"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
