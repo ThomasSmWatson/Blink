@@ -1,0 +1,10 @@
+{
+	"database" : {
+		"address": "localhost/blink",
+		"port": 27017,
+		"schema_location":"mongoose_schemas",
+		"schemas": {
+			
+		}
+	}
+}
