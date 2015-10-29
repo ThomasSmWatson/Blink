@@ -4,6 +4,7 @@
   "description": "Angular Website Which uses Instagram API to get images regarding the type/time of day",
   "main": "server.js",
   "dependencies": {
+    "body-parser": "^1.14.1",
     "express": "^4.13.3",
     "jasmine": "^2.3.2",
     "mongoose": "^4.2.3"
