@@ -25,7 +25,7 @@ app.get('/',function(req,res){
 app.post('/user', function(req,res){
 	console.log('Data Recieved! Need to connect to Mongo still though...');
 	console.log(req.body);
-	res.send(200);
+	res.sendStatus(200);
 });
 
 app.listen(3000);

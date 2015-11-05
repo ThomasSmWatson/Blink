@@ -6,18 +6,28 @@
 	<input type='text'class='form-control' maclength='50' ng-model='user.email' id='email-input' placeholder='Email'>
 	<br>
 	
-	<label for='dob'>Date Of Birth</label>
-	<div class ='form-inline'id='dob'>
-		<div class='form-group'>
-			<input type='text' class='form-control' ng-model='user.dob.day' maxlength='2' placeholder='DD'>
-		</div>
-		<div class='form-group'>
-			<input type='text' class='form-control' ng-model='user.dob.month' id='month' maxlength='2' placeholder='MM'>
-		</div>
-		<div class='form-group'>
-			<input type='text' class='form-control' ng-model='user.dob.year' id='year' maxlength='4' placeholder = 'YYYY'>
+	<label for='DOB'>Date Of Birth:</label>
+	<div id='DOB' class='form-group'>
+		<div class='row'>
+			<div class='col-md-3'>
+				<select class='form-control' ng-model='user.dob.day' aria-labelledby='dob.day' >
+					<option ng-repeat='i in countTo(30)'>{{i}}</option>
+				</select>
+			</div>
+			<div class='col-md-3'>
+				<select class='form-control'ng-model='user.dob.month' aria-lebeledby='dob.month'>
+					<option ng-repeat='i in countTo(12)'>{{i}}</option>
+				</select>
+			</div>
+			<div class='col-md-4'>
+				<select class='form-control' ng-model='user.dob.year' aria-labelledby='dob.year'>
+					<option ng-repeat='i in countFrom(2015,100)'>{{i}}</option>
+				</select>
+			</div>
+			<div class='col-md-2'></div>
 		</div>
 	</div>
+	
 
 	<br>
 	<label for='password-input'>Password:</label>
