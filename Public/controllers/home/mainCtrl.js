@@ -29,4 +29,18 @@ app.controller('RegisterController',['$scope','$http',function($scope,$http){
 			});  
 		//NEED TO ADD HTTP REQ TO SERVER!
 	}
+	$scope.countTo= function(count){
+		var array = [];
+		for(i = 1; i<=count; i++){
+			array.push(i);
+		}
+		return array;
+	}
+	$scope.countFrom = function(startingPoint,count){
+		var numbers = [];
+		for(i=startingPoint; i>startingPoint-count;i--){
+			numbers.push(i);
+		}
+		return numbers;
+	}
 }]);
