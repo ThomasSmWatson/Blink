@@ -1,7 +1,7 @@
 {
 	"database" : {
 		"address": "localhost/blink",
-		"port": 27017,
+		"port": "27017 currently not in use",
 		"schema_location":"mongoose_schemas",
 		"schemas": {
 			
